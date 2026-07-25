@@ -156,3 +156,26 @@ p {
   position: sticky;
   top: 100px;
 }
+
+@media (max-width: 600px) {
+  #header {
+    flex-wrap: wrap;
+    padding: 5px 10px;
+  }
+  #headearIMG {
+    width: 100px;
+    height: 50px;
+  }
+  .logoContainer ul {
+    display: none;
+    /* منو رو موقتاً مخفی می‌کنیم روی موبایل */
+  }
+  #buttons {
+    gap: 5px;
+  }
+  #loginBTN,
+  #SignupBTN {
+    width: 70px;
+    font-size: 14px;
+  }
+}
