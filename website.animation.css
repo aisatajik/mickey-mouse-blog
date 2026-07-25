@@ -130,10 +130,15 @@ h1 {
 }
 
 .blogTXT {
+  width: 96%;
+  margin: auto;
 }
 
 p {
   color: rgb(66, 65, 65);
+  text-align: justify;
+  line-height: 1.6;
+  hyphens: auto;
 }
 
 #Ih3 {
