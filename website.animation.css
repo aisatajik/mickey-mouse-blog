@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fafafa;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+#header {
+  background-color: white;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 3;
+}
+
+#body1 {
+  padding-top: 110px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  padding: 3px;
+  margin: 3px;
+}
+
+ul {
+  display: flex;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+#buttons {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+
+#loginBTN {
+  border: 0;
+  background-color: cyan;
+  color: white;
+  border-radius: 30px;
+  margin-right: 10px;
+  font-weight: lighter;
+  font-style: italic;
+  font-size: larger;
+  width: 90px;
+}
+
+#SignupBTN {
+  border: 2px cyan dotted;
+  background-color: white;
+  color: cyan;
+  border-radius: 30px;
+  font-weight: lighter;
+  font-style: italic;
+  font-size: larger;
+  width: 90px;
+}
+
+#headearIMG {
+  width: 200px;
+  height: 100px;
+}
+
+#tag {
+  background-color: orange;
+  color: white;
+  width: 90px;
+  height: 25px;
+  border-radius: 30px;
+  display: inline;
+  padding: 3px 7px;
+  font-size: 10px;
+}
+
+#date {
+  display: inline;
+  margin-right: 5px;
+  font-size: 12px;
+}
+
+.dateTag {
+  display: inline;
+}
+
+h1 {
+  font-weight: lighter;
+}
+
+.writerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 300px;
+  gap: 10px;
+}
+
+.writerContainer > img {
+  width: 25px;
+  height: 25px;
+  border: 1px black solid;
+  border-radius: 50%;
+}
+
+.writerContainer > div {
+  font-size: 14px;
+}
+
+.line {
+  height: 1px;
+  background-color: orange;
+  margin: 5px 0 5px 0;
+}
+
+.blogIMG > img {
+  width: 96%;
+  height: 400px;
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+}
+
+.blogTXT {
+  width: 96%;
+  margin: auto;
+}
+
+p {
+  color: rgb(66, 65, 65);
+  text-align: justify;
+  line-height: 1.6;
+  hyphens: auto;
+}
+
+#Ih3 {
+  background-color: orange;
+  width: fit-content;
+  margin: 5px;
+  position: sticky;
+  top: 100px;
+}
+
+#Ch3 {
+  background-color: orange;
+  width: fit-content;
+  margin: 5px;
+  position: sticky;
+  top: 100px;
+}
+
+@media (max-width: 600px) {
+  #header {
+    flex-wrap: wrap;
+    padding: 5px 10px;
+  }
+  #headearIMG {
+    width: 100px;
+    height: 50px;
+  }
+  .logoContainer ul {
+    display: none;
+    /* منو رو موقتاً مخفی می‌کنیم روی موبایل */
+  }
+  #buttons {
+    gap: 5px;
+  }
+  #loginBTN,
+  #SignupBTN {
+    width: 70px;
+    font-size: 14px;
+  }
+}
