@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fafafa;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+#header {
+    background-color: white;
+    display: flex;
+    height: auto;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+
+#body1 {
+    padding-top: 110px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    margin: 3px;
+}
+
+ul {
+    display: flex;
+}
+
+.logoContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+
+#loginBTN {
+    border: 0;
+    background-color: rgb(255, 174, 0);
+    color: white;
+    border-radius: 30px;
+    margin-right: 10px;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: larger;
+    width: 90px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#SignupBTN {
+    border: 2px rgb(255, 174, 0) dotted;
+    background-color: white;
+    color: rgb(255, 174, 0);
+    border-radius: 30px;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: larger;
+    width: 90px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#headearIMG {
+    width: 200px;
+    height: 100px;
+}
+
+#tag {
+    background-color: orange;
+    color: white;
+    width: 90px;
+    height: 25px;
+    border-radius: 30px;
+    display: inline;
+    padding: 3px 7px;
+    font-size: 10px;
+}
+
+#date {
+    display: inline;
+    margin-right: 5px;
+    font-size: 12px;
+}
+
+.dateTag {
+    display: inline;
+}
+
+h1 {
+    font-weight: lighter;
+}
+
+.writerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 300px;
+    gap: 10px;
+}
+
+.writerContainer>img {
+    width: 25px;
+    height: 25px;
+    border: 1px black solid;
+    border-radius: 50%;
+}
+
+.writerContainer>div {
+    font-size: 14px;
+}
+
+.line {
+    height: 1px;
+    background-color: orange;
+    margin: 5px 0 5px 0;
+}
+
+.blogIMG>img {
+    width: 96%;
+    height: 400px;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+}
+
+.blogTXT {
+    width: 96%;
+    margin: auto;
+}
+
+p {
+    color: rgb(66, 65, 65);
+    text-align: justify;
+    line-height: 1.6;
+    hyphens: auto;
+}
+
+#Ih3 {
+    background-color: orange;
+    width: fit-content;
+    margin: 5px;
+    position: sticky;
+    top: 100px;
+}
+
+#Ch3 {
+    background-color: orange;
+    width: fit-content;
+    margin: 5px;
+    position: sticky;
+    top: 100px;
+}
+
+@media (max-width: 600px) {
+    #header {
+        flex-wrap: wrap;
+        padding: 5px 10px;
+    }
+    .logoContainer {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    #headearIMG {
+        width: 100px;
+        height: 50px;
+    }
+    .logoContainer ul {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 5px;
+    }
+    li {
+        font-size: 13px;
+        padding: 2px;
+        margin: 2px;
+    }
+    #buttons {
+        width: 100%;
+        justify-content: center;
+        gap: 5px;
+        margin-top: 5px;
+    }
+    #loginBTN,
+    #SignupBTN {
+        width: auto;
+        min-width: 60px;
+        padding: 4px 10px;
+        font-size: 13px;
+        margin-right: 0;
+    }
+}
+
+
+}
